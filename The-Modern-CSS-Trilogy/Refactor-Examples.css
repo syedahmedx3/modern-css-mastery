@@ -1,0 +1,78 @@
+/* 🏛️ MODERN CSS MASTERY: PRODUCTION-GRADE EXAMPLES
+  Philosophy: Offload UI Logic to the Browser Engine
+*/
+
+/* ==========================================
+   1. THE EFFICIENCY PILLAR: :is()
+   Use Case: Scalable Typography & Layouts
+   ========================================== */
+
+/* ❌ THE LEGACY APPROACH: Redundant & Error-Prone 
+   Adding a new section requires manual updates everywhere. */
+article h1,
+article h2,
+article p,
+section h1,
+section h2,
+section p,
+aside h1,
+aside h2,
+aside p {
+  margin-block-end: 1.5rem;
+  font-family: var(--font-primary);
+}
+
+/* ✅ THE PRODUCTION WAY: High-Efficiency Selection
+   Clean, maintainable, and "forgiving" (if one selector fails, the rest still work). */
+:is(article, section, aside) :is(h1, h2, p) {
+  margin-block-end: 1.5rem;
+  font-family: var(--font-primary);
+}
+
+/* ==========================================
+   2. THE RELATIONSHIP PILLAR: :has()
+   Use Case: State-Driven UI without JavaScript
+   ========================================== */
+
+/* ❌ THE LEGACY APPROACH: Requires JS Event Listeners
+   Adding/removing classes like '.has-error' or '.is-focused' on parent divs. */
+
+/* ✅ THE PRODUCTION WAY: Smart Parent-Aware Containers
+   Automatically styles the card or form-group based on the child's state. */
+
+/* Highlight a card if any checkbox inside is checked */
+.product-card:has(input[type="checkbox"]:checked) {
+  outline: 2px solid var(--brand-primary);
+  background-color: var(--brand-subtle);
+}
+
+/* Visual feedback for invalid form groups without JS 'blur' events */
+.form-field:has(input:invalid:not(:placeholder-shown)) {
+  border-left: 4px solid var(--error-red);
+}
+
+/* ==========================================
+   3. THE WEIGHTLESSNESS PILLAR: :where()
+   Use Case: Resilient Design Systems & Library Defaults
+   ========================================== */
+
+/* ❌ THE LEGACY APPROACH: High-Specificity Wars
+   Hard-coded styles that force developers to use !important to override. */
+.nav-menu ul li a {
+  padding: 1rem;
+  text-decoration: none;
+}
+
+/* ✅ THE PRODUCTION WAY: Zero-Specificity Defaults
+   Sets the "Ideal Default" while remaining perfectly "Weightless" (0-0-0). */
+:where(.nav-menu ul li a) {
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+/* 💡 Impact: A developer can now override this with a single class 
+   without fighting the original selector's weight. */
+.contact-link {
+  color: var(--brand-accent); /* Works instantly! */
+}

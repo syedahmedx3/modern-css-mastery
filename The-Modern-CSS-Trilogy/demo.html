@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern CSS Mastery: Live Demo</title>
+    <link rel="stylesheet" href="Refactor-Examples.css" />
+    <style>
+      /* Base Demo Styling (Architecture for the Demo only) */
+      :root {
+        --font-primary: "Inter", system-ui, sans-serif;
+        --brand-primary: #2563eb;
+        --brand-subtle: #eff6ff;
+        --error-red: #dc2626;
+        --text-main: #1f2937;
+        --brand-accent: #7c3aed;
+      }
+
+      body {
+        font-family: var(--font-primary);
+        line-height: 1.5;
+        padding: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+        background: #f8fafc;
+      }
+
+      .demo-section {
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        margin-bottom: 3rem;
+      }
+
+      h2 {
+        border-bottom: 2px solid #eee;
+        padding-bottom: 0.5rem;
+      }
+      .label {
+        font-size: 0.8rem;
+        color: #64748b;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      /* Product Card Base (for :has demo) */
+      .product-card {
+        padding: 1.5rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+
+      /* Form Field Base (for :has demo) */
+      .form-field {
+        padding: 1rem;
+        border: 1px solid #e2e8f0;
+        margin-top: 1rem;
+        border-radius: 6px;
+      }
+
+      input {
+        padding: 0.5rem;
+        border: 1px solid #cbd5e1;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>🏛️ Modern CSS Mastery</h1>
+      <p>Live logic demonstration—Zero JavaScript used for state management.</p>
+    </header>
+
+    <hr />
+
+    <section class="demo-section">
+      <p class="label">Pillar 1: Efficiency (:is)</p>
+      <article>
+        <h1>Article Header</h1>
+        <p>
+          This typography is styled using a single consolidated
+          <code>:is()</code> selector, reducing CSSOM weight.
+        </p>
+      </article>
+      <aside>
+        <h2>Sidebar Header</h2>
+        <p>The same logic applies here effortlessly.</p>
+      </aside>
+    </section>
+
+    <section class="demo-section">
+      <p class="label">Pillar 2: Relationships (:has)</p>
+
+      <div class="product-card">
+        <h3>Interactive Product Card</h3>
+        <p>
+          Check the box below to see the <strong>parent</strong> card react.
+        </p>
+        <label> <input type="checkbox" /> Select this product </label>
+      </div>
+
+      <div class="form-field">
+        <p>
+          <strong>Auto-Validation:</strong> Type an invalid email (e.g.,
+          "hello") to see the parent container react.
+        </p>
+        <input type="email" placeholder="Enter valid email..." required />
+      </div>
+    </section>
+
+    <section class="demo-section">
+      <p class="label">Pillar 3: Weightlessness (:where)</p>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">Standard Link (0 Specificity)</a></li>
+          <li>
+            <a href="#" class="contact-link"
+              >Overridden Link (Weightless winner)</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <p>
+        <small
+          >The "Purple" link overrides the default "Black" link because the base
+          was set with <code>:where()</code>.</small
+        >
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        Created by Syed Ahmed Mohi Uddin Hasan | Part of the Modern CSS Trilogy
+      </p>
+    </footer>
+  </body>
+</html>
