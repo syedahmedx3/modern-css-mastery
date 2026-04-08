@@ -2,8 +2,9 @@
 ![Performance](https://img.shields.io/badge/Lighthouse-100-green?style=for-the-badge&logo=google-lighthouse)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-# 🏛️ Modern CSS Mastery
-
+# 🏛️ Modern CSS Mastery 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/syedahmedhasanx3/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-00df9a)](https://syedahmedx3.github.io/Portfolio/)
 > **Architecting the Web for Efficiency, Weightlessness, and Relationships.**
 
 This repository is a professional knowledge hub dedicated to high-performance front-end engineering. My goal is to move beyond "painting" styles and toward a philosophy of offloading UI logic from the main thread directly into the lightning-fast CSS engine.
