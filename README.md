@@ -1,36 +1,184 @@
-![CSS](https://img.shields.io/badge/CSS3-Mastery-blue?style=for-the-badge&logo=css3)
-![Performance](https://img.shields.io/badge/Lighthouse-100-green?style=for-the-badge&logo=google-lighthouse)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+# 🚀 Modern CSS Mastery
 
-# 🏛️ Modern CSS Mastery
+A high-performance, architecture-first approach to modern CSS — focused on **browser-native capabilities**, **zero-JS UI logic**, and **scalable design systems**.
 
-> **Architecting the Web for Efficiency, Weightlessness, and Relationships.**
-
-This repository is a professional knowledge hub dedicated to high-performance front-end engineering. My goal is to move beyond "painting" styles and toward a philosophy of offloading UI logic from the main thread directly into the lightning-fast CSS engine.
-
-## 🚀 The Engineering Philosophy
-
-I believe in building web interfaces that are:
-
-- **Performant**: Prioritizing native CSS execution to boost Lighthouse scores.
-- **Scalable**: Eliminating "Walls of Text" and redundant code through intelligent architecture.
-- **Logic-Driven**: Leveraging modern browser capabilities to create state-aware interfaces without heavy JavaScript dependencies.
-
-## 📂 Active Knowledge Modules
-
-This hub is currently focused on the fundamental shift in CSS selection and logic:
-
-- **[The Modern Trilogy](./The-Modern-CSS-Trilogy)**: A deep-dive into the architectural power of `:is()`, `:where()`, and `:has()`.
-- **🚀 [Live Interactive Demo](https://syedahmedx3.github.io/modern-css-mastery/The-Modern-CSS-Trilogy/demo.html)**: See the selectors in action (Zero JavaScript).
+> 💡 This project demonstrates how to move from traditional CSS patterns to **next-generation, performance-driven styling techniques**.
 
 ---
 
-## 🌟 Support & Community
+## 📸 Preview
 
-If you find these architectural insights helpful for your projects:
+![Hero](./src/assets/hero.png)
 
-1. **⭐ Star the Repo**: It helps other developers discover these performance-focused resources.
-2. **📢 Refer & Share**: If you know a team struggling with "Specificity Wars" or "JS-heavy" UI logic, share this hub with them.
-3. **🤝 Connect**: I am currently seeking new opportunities where I can apply this level of technical optimization. Let's build a faster web together.
+---
 
-**Created by [Syed Ahmed Mohi Uddin Hasan](https://www.linkedin.com/in/syedahmedhasanx3/)**
+# 📚 Modules Overview
+
+This project is structured as a set of **core CSS architecture modules**, each focusing on a specific paradigm shift in modern frontend development.
+
+---
+
+## 1. ⚡ CSS Trilogy
+
+**Goal:** Offload UI logic to the browser’s CSS engine.
+
+- `:is()` → Selector efficiency
+- `:where()` → Zero specificity
+- `:has()` → Parent-aware logic
+
+✅ Outcome:
+
+- Reduced JS usage
+- Cleaner CSS
+- Native state management
+
+---
+
+## 2. 📐 Layout Architecture
+
+**Goal:** Replace breakpoints with constraint-based design.
+
+- `clamp()` → Fluid scaling
+- Grid & Subgrid → Structural logic
+- `content-visibility` → Deferred rendering
+
+✅ Outcome:
+
+- No layout jumps
+- Reduced DOM complexity
+- Better performance
+
+---
+
+## 3. 🧠 Rendering Engine
+
+**Goal:** Optimize the Critical Rendering Path.
+
+- GPU transforms (`transform`, `opacity`)
+- Rendering containment
+- Intrinsic sizing
+
+✅ Outcome:
+
+- Faster paint cycles
+- Lower CPU usage
+- Smooth animations
+
+---
+
+## 4. 📦 Container Intelligence
+
+**Goal:** Build truly modular components.
+
+- `@container` queries
+- Container units (`cqw`, `cqh`)
+- Subgrid alignment
+
+✅ Outcome:
+
+- Component-driven responsiveness
+- Reusable UI blocks
+- No viewport dependency
+
+---
+
+## 5. 🧩 Native Logic
+
+**Goal:** Replace JavaScript UI logic with CSS.
+
+- `:has()` → State management
+- `oklch()` → Color systems
+- `color-mix()` → Dynamic theming
+
+✅ Outcome:
+
+- Smaller JS bundle
+- Accessible-by-default UI
+- Cleaner architecture
+
+---
+
+# 🏗️ Project Structure
+
+```
+src/
+├─ assets/
+├─ components/
+│  ├─ DocViewer.tsx
+│  └─ Sidebar.tsx
+├─ content/
+│  ├─ container-intelligence.md
+│  ├─ css-trilogy.md
+│  ├─ modern-responsive-design.md
+│  ├─ native-state-management.md
+│  └─ rendering-path-optimization.md
+├─ data/
+│  └─ modules.ts
+├─ App.tsx
+├─ main.tsx
+└─ types.ts
+```
+
+---
+
+# ⚙️ Tech Stack
+
+- ⚛️ React + TypeScript
+- ⚡ Vite
+- 🎨 Modern CSS (no frameworks)
+- 🧩 Lucide Icons
+
+---
+
+# 🚀 Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+---
+
+# 🎯 Philosophy
+
+> **"Let the browser do the work — not JavaScript."**
+
+This project is built on three core principles:
+
+- 🧠 Offload logic to CSS
+- ⚡ Minimize main-thread work
+- 📦 Build modular, scalable systems
+
+---
+
+# 📈 Performance Focus
+
+- ✅ Low Total Blocking Time (TBT)
+- ✅ Zero Layout Shift (CLS)
+- ✅ Fast Time to Interactive (TTI)
+- ✅ Minimal JavaScript execution
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+- Improve documentation
+- Add new CSS modules
+- Optimize performance patterns
+
+---
+
+# 📜 License
+
+MIT License
+
+---
+
+# ⭐ Final Thought
+
+> **A layout that adapts through math is always faster than one that adapts through JavaScript.**
